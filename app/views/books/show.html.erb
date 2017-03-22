@@ -9,7 +9,9 @@
 	</div>
 	<% if user_signed_in? %>
 	<ul class="nav navbar-nav navbar-right">
-	<li><%= link_to "Rent this Book?", new_book_path %></li>	</ul>
+	<li><button><%= link_to "Reserve?", new_book_path, :data => {:confirm => 'Are you sure you want to reserve this book?'} %></li></button>
+	<br><br>	
+	</ul>
 	<%end%>
 	<div class="col-md-8">
 
